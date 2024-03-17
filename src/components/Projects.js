@@ -5,7 +5,7 @@ import emiCalculator from './emiCalculator.png';
 
 const Projects = () => {
   return (
-    <div>
+    <div className='projectDiv'>
         <Navbar />
         <div className='projectSection'>
             <div className='projectCard'>

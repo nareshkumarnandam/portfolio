@@ -6,7 +6,7 @@ import passwordGenerator from './passwordGenerator.png';
 
 const More = () => {
   return (
-    <div>
+    <div className='projectDiv'>
         <Navbar />
         <div className='projectSection'>
             <div className='projectCard'>
