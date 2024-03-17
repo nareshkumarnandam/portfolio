@@ -1,0 +1,105 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 20%;
+    border: 3px solid #FEE715;
+    border-radius: 10px;
+    color: #FEE715;
+    padding: 10px 0;
+    position: fixed;
+}
+hr{
+    width: 90%;
+    border: 1px solid #FEE715;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #fee71577,
+    -2px -2px 5px #fee71577;
+}
+.personalInfo, .locationDetails{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.profilepicDiv{
+    display: flex;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.profilePic{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FEE715;
+    border-radius: 100%;
+}
+.name{
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-align: center;
+}
+.helloWorldText{
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fee7156b;
+    border-radius: 30px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    text-justify: center;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    border: 2px solid #FEE715;
+    box-shadow: 2px 2px 5px #FEE715,
+                -2px -2px 5px #FEE715;
+}
+p{
+    margin: 0;
+}
+.age, .location, .personality {
+    display: flex;
+    gap: 30px;
+    padding:0 20px;
+    margin: 10px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+}
+.ageIcon, .locationIcon, .personalityIcon{
+    font-size: 1.5rem;
+}
+.heading{
+    font-size: 12px;
+    color: #fee71580;
+    padding: 0;
+    margin: 0;
+}
+.details{
+    margin: 0;
+    font-size: 14px;
+}
+.locationDetails{
+    gap: 5px;
+}
+.socials{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.socials > a{
+    color: #fee71575;
+}

@@ -1,38 +1,314 @@
+body{
+  background-color: #101820;
+}
+
+
 .App {
-  text-align: center;
+  display: flex;
+  padding: 30px 50px;
+  background-color: #101820;
+  height: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ageText, .locationText, .personalityText{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+  gap: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landingScreen{
+  position: relative;
+  left: 30%;
+  width: 65%;
+  border: 3px solid #FEE715;
+  border-radius: 10px;
+  color: #FEE715;
+  padding: 10px 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav > ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 10px;
+  font-size: 14px;
+  color: #fee71585;
+  transition: all .2s;
+}
+li{
+  transition: all .2s;
+}
+li:hover{
+  cursor: pointer;
+  color: #FEE715;
+}
+.aboutSection, .certificationsDiv{
+  padding: 20px;
+}
+.aboutDiv{
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 30px;
+}
+.intro{
+  padding: 10px 20px;
+  border: 
+  2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  font-weight: 200;
+  font-size: 16px;
+}
+.showmoreBtn{
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin: 20px 0;
+}
+.showmoreBtn > button{
+  background-color: transparent;
+  border: none;
+  color: #FEE715;
+  cursor: pointer;
+  animation: bounce 2s ease infinite;
+}
+@keyframes bounce {
+  10% { transform:translateY(0%); }
+  30% { transform:translateY(-15%); }
+  50% { transform:translateY(0%); }
+  60% { transform:translateY(-7%); }
+  77% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
 }
 
-.App-link {
-  color: #61dafb;
+.primaryFocus{
+  font-size: 2rem;
+  font-weight: 500;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.primaryFocusDiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.primaryFocusDiv > div{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  border: 
+  2px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 15px;
+}
+.focusicon{
+  width: 30%;
+  font-size: 3rem;
+}
+.primaryFocusDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.primaryFocusDetails > h1{
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.primaryFocusDetails > p{
+  color: #fee715c2;
+}
+.languagesDiv{
+  display: flex;
+  padding: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.codingLangs, .speakingLangs{
+  width: 40%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: left;
+  padding: 20px;
+  gap: 20px;
+}
+.languagesDiv > div >h1{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.codingLangs, .speakingLangs{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 200px;
+}
+.codingLangs > ul, .speakingLangs > ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fee715d0;
+}
+.certificationsSection{
+  margin-top: 30px;
+  width: 94%;
+  display: flex;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.certificationsSection > h1{
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.projectSection{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 94%;
+  justify-content: center;
+  gap: 20px;
+}
+.projectCard{
+  width: 45%;
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 10px; */
+  object-fit: cover;
+}
+.projectImage{
+  width: 100%;
+  height: 60%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  transition: all .5s;
+}
+.projectImage:hover{
+  opacity: 0.3;
+}
+.live, .repo{
+  width: 60%;
+  text-align: center;
+  color: #FEE715;
+  border: 2px solid gray;
+  border-radius: 10px;
+  margin: 5px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+.live:hover , .repo:hover{
+  color: #fee715c0;
+}
+a{
+  color: #fee715a6;
+  text-decoration: none;
+}
+.contactSection{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  width: 94%;
+  justify-content: center;
+  gap: 20px;
+}
+.emailCard, .socialCard{
+  width: 100%;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.mailId{
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fee7156b;
+  border-radius: 30px;
+  height: 35px;
+  text-align: center;
+  text-justify: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  border: 2px solid #FEE715;
+  box-shadow: 2px 2px 5px #FEE715,
+              -2px -2px 5px #FEE715;
+  gap: 10px;
+}
+.mailId > button{
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.emailCard > h1{
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.socialContactCard{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.socialCard > h1{
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.socialContactCard > a{
+  font-size: 3rem;
+  transition: all .2s;
+  color: #FEE715;
+}
+.socialContactCard > a:hover{
+  color: #fee715bb;
 }
